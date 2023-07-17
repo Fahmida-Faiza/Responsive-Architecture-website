@@ -89,7 +89,7 @@ nav li a {
 
 /* main styles */
 main {
-    max-width: 1440px;
+    max-width: 1080px;
     margin: 70px auto;
 }
 
@@ -126,11 +126,55 @@ main {
     color: #FF900E;
     font-weight: 700;
 }
+/* features section style */
+.features{
+    margin-top: 130px;
+    display: flex;
+}
 
+.features .section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.feature-img img{
+     height: 90%;
+    width: 568px;
+    margin-left: 90px; 
+}
+.feature-content .card{
+    
+    margin-bottom: 20px;
+    border-radius: 8px;
+        background: #FFF;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.ten-years-badge{
+ border-radius: 8px;
+ background: #FF900E;
+ color:#FFF;
+ 
+width: 250px;
+    height: 100px;
+ padding: 20px;
+ margin-left: 25px;
+ 
+ text-align: center;
+ position: relative;
+ bottom: 110px;
+}
+.ten-years-badge h2{
+    font-size: 3rem;
+    margin: 0;
+
+}
+.ten-years-badge p{
+    font-size: 1.5rem;;
+}
 /* facts section */
 .facts-card-container {
     display: flex;
     justify-content: space-around;
+    gap: 100px;
 
 }
 
@@ -180,8 +224,21 @@ main {
 
 
 
+/* footer styles */
+.footer-content {
+width: 80%;
+    height: 100px;
+border-radius: 8px;
+    background: #FFF4E7;
+    color: white;
+    text-align: center;
+    margin-left: 150px;
+    margin-top: 130px;
+}
+.footer-content p{
+    padding: 40px;
 
-
+}
 
 
 
@@ -221,9 +278,14 @@ main {
     nav,
     .teams-container,
     .facts-card-container,
-    .sponsors-img-container {
+    .sponsors-img-container, .features {
         flex-direction: column;
     }
+    .feature-img img{
+        width: 90%;
+       margin-left: 0;
+    }
+
 
     .teams-img-container {
         grid-template-columns: 1fr;
@@ -239,6 +301,10 @@ main {
 
         gap: 20px;
     }
+    .footer-content {
+       margin: auto;
+     padding-bottom: 30px;
+    }
 
 }
 
@@ -252,8 +318,15 @@ main {
     }
 
     nav,
-    .teams-container ,.sponsors-img-container {
+    .teams-container ,.sponsors-img-container ,.features {
         flex-direction: column;
     }
+
+        .facts-card-container{
+            gap:0;
+        }
+        .footer-content{
+            margin-left: 70px;
+        }
 
 }
